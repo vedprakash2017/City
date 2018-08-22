@@ -1,0 +1,138 @@
+.App {
+  text-align: center;
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f3f4;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main {
+}
+.city {
+  font-family: sans-serif-penna;
+  position: absolute;
+  top: 83%;
+  left: 40%;
+  font-size: 50px;
+  opacity: 0.7;
+  color: blue;
+  font-weight: bold;
+  letter-spacing: 13px;
+  text-shadow: 3px 5px 2px gray;
+}
+.desc {
+  position: absolute;
+  top: 99%;
+  left: 15%;
+  width: 70%;
+  font-size: 40px;
+  text-align: center;
+  padding: 60px;
+  animation: fadein 3s linear;
+}
+.events {
+  position: absolute;
+  margin: auto;
+  top: 67%;
+}
+.event {
+  font-size: 15px;
+  padding: 25px;
+  margin: 40px;
+  width: 60%;
+  background-color: black;
+  color: white;
+}
+.event:hover {
+  color: blue;
+  transform: scale(1.2);
+  opacity: 0.9;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.remove {
+  padding: 15px;
+  margin: 30px;
+}
+
+.image {
+  position: absolute;
+  top: 0%;
+  margin: 0 auto;
+  left: 0%;
+  width: 100%;
+  height: 60%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+.extra {
+  position: absolute;
+  left: 0px;
+  top: 0%;
+  width: 15%;
+  height: 157%;
+  background-color: gray;
+  opacity: 0.1;
+}
+
+.gr_lacalhost {
+  margin: 0;
+  padding: 0;
+  width: 0%;
+  height: 0%;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .city {
+    position: absolute;
+    left: 5%;
+    top: 70%;
+    font-size: 30px;
+  }
+  .events {
+    position: absolute;
+    top: 160%;
+    left: 13%;
+  }
+  .event {
+    padding: 10px;
+    width: 60%;
+  }
+  .desc {
+    position: absolute;
+    top: 80%;
+    left: -8%;
+    font-size: 15px;
+    width: 70%;
+  }
+  .extra {
+    height: 157%;
+  }
+  .image {
+    height: 50%;
+  }
+}

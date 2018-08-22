@@ -1,0 +1,82 @@
+{
+  "city": [
+    "New Delhi",
+    "Kolkata",
+    "Bhubaneshwar",
+    "Ranchi",
+    "Bangalore",
+    "Bhopal",
+    "Vizag",
+    "Hyderabad",
+    "Mumbai",
+    "Pune"
+  ],
+
+  "New Delhi": {
+    "image": "https://images.thrillophilia.com/image/upload/s--TyBlmC8d--/c_fill,f_auto,fl_strip_profile,h_775,q_auto,w_1600/v1/images/photos/000/038/465/original/shutterstock_161305583-copy-31.jpg.jpg?1458178947",
+    "desc": " Delhi, India’s capital territory, is a massive metropolitan area in the country’s north. In Old Delhi, a neighborhood dating to the 1600s, stands the imposing Mughal-era Red Fort,a symbol of India, and the sprawling Jama Masjid mosque, whose courtyard accommodates 25,000 people. Nearby is Chandni Chowk, a vibrant bazaar filled with food carts,sweets shops and spice stalls. ",
+    "event": ["NUKKAD", "SHUFFLE", "SF-IDOL", "SHAKE A LAG", "TWO FOR A TANGO"]
+  },
+
+  "Kolkata": {
+    "image": "",
+
+    "desc": " Kolkata is the capital of the Indian state of West Bengal. Located on the east bank of the Hooghly River, it is the principal commercial, cultural, and educational centre of East India. Many people from Kolkata—among them several Nobel laureates—have contributed to the arts, the sciences, and other areas. Kolkata culture features idiosyncrasies that include distinctively close-knit neighbourhoods and freestyle intellectual exchanges.  ",
+    "event": ["Hilarity Ensues", "Poetry Slams"]
+  },
+
+  "Bhubaneshwar": {
+    "image": "",
+
+    "desc": " Bhubaneshwar is the capital of the Indian state of Odisha. It is the largest city in Odisha and is a centre of economic and religious importance in Eastern India. With the diverse ranges of heritage resources, it showcases significant sacred cultural landscape components which have evolved with the support of available natural resource base and cultural trigger. ",
+    "event": ["Hilarity Ensues", "Poetry Slams"]
+  },
+
+  "Ranchi": {
+    "image": "",
+
+    "desc": " Ranchi is the capital of the Indian state of Jharkhand, and now it is the most populous city of the state. Ranchi was the centre of the Jharkhand movement,[3] which called for a separate state for the tribal regions of South Bihar, northern Orissa, western West Bengal and the eastern area of what is present-day Chhattisgarh. The Jharkhand state was formed on 15 November 2000 by carving out the Bihar divisions of Chota Nagpur and Santhal Parganas. ",
+    "event": ["Hilarity Ensues", "Poetry Slams"]
+  },
+
+  "Bangalore": {
+    "image": "",
+
+    "desc": " Bengaluru (also called Bangalore) is the capital of India's southern Karnataka state. The center of India's high-tech industry, the city is also known for its parks and nightlife. By Cubbon Park, Vidhana Soudha is a Neo-Dravidian legislative building. Former royal residences include 19th-century Bangalore Palace, modeled after England’s Windsor Castle, and Tipu Sultan’s Summer Palace, an 18th-century teak structure. ",
+    "event": ["Shuffle", "Shake A Leg"]
+  },
+
+  "Bhopal": {
+    "image": "",
+
+    "desc": " Bhopal is a city in the central Indian state of Madhya Pradesh. It's one of India’s greenest cities. There are two main lakes, the Upper Lake and the Lower Lake. On the banks of the Upper Lake is Van Vihar National Park, home to tigers, lions and leopards. The State Museum has fossils, paintings and rare Jain sculptures. Taj-ul-Masjid is one of Asia’s largest mosques, with white domes, minarets and a huge courtyard. ",
+    "event": ["Nukkad", "SF-Idol", "Shake A Leg", " Two For A Tango"]
+  },
+
+  "Vizag": {
+    "image": "",
+
+    "desc": " Visakhapatnam (locally known also Vaishakhapuram or Vizag) is the largest metropolis in the state of Andhra Pradesh and seventh largest in India. It covers an area of 544 sq km on the South-East cost of India about 625 km away from Hyderabad, the capital town of Andhra Pradesh. The city is the administrative headquarters of Visakhapatnam district and Eastern Naval Command. ",
+    "event": ["Shuffle", "SF-Idol", "Shake A Leg", "Two For A Tango"]
+  },
+
+  "Hyderabad": {
+    "image": "",
+
+    "desc": " Hyderabad is the capital of southern India's Telangana state. A major center for the technology industry, it's home to many upscale restaurants and shops. Its historic sites include Golconda Fort, a former diamond-trading center that was once the Qutb Shahi dynastic capital. The Charminar, a 16th-century mosque whose 4 arches support towering minarets, is an old city landmark near the long-standing Laad Bazaar. ",
+    "event": ["Shuffle", "SF-Idol", "Shake A Leg", "Two For A Tango"]
+  },
+
+  "Mumbai": {
+    "image": "",
+
+    "desc": " Mumbai (formerly called Bombay) is a densely populated city on India’s west coast. A financial center, it's India's largest city. On the Mumbai Harbour waterfront stands the iconic Gateway of India stone arch, built by the British Raj in 1924. The city's also famous as Mumbai and is a densely populated city on India’s west coast. It is also known as the heart of the Bollywood film industry. ",
+    "event": ["Shuffle", "SF-Idol", "Shake A Leg", "Nukkad", "TWO FOR A TANGO"]
+  },
+  "Pune": {
+    "image": "",
+
+    "desc": " Pune is a sprawling city in the western Indian state of Maharashtra. It was once the base of the Peshwas (prime ministers) of the Maratha Empire, which lasted from 1674 to 1818. It's known for the grand Aga Khan Palace, built in 1892 and now a memorial to Mahatma Gandhi, whose ashes are preserved in the garden. The 8th-century Pataleshwar Cave Temple is dedicated to the Hindu god Shiva. ",
+    "event": ["Shuffle", "SF-Idol", "Shake A Leg", "Nukkad"]
+  }
+}
