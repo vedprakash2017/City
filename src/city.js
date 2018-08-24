@@ -29,7 +29,9 @@ class App extends Component {
           {ved[ved["city"][i]].event.map(ta => (
             <div className="event">
               {" "}
-              <a href="http://www.google.co.in">{ta}</a>
+              <span>
+                <a key={ta}>{ta}</a>
+              </span>
             </div>
           ))}
         </div>
@@ -37,9 +39,8 @@ class App extends Component {
           <div className="city">{ved["city"][i]}</div>
 
           <br />
-          <div className="desc">{ved[ved["city"][i]].desc} jneh</div>
+          <div className="desc">{ved[ved["city"][i]].desc}</div>
         </div>
-        }
       </div>
     );
   }

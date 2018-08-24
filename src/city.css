@@ -5,7 +5,12 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f1f3f4;
+
+  /*
+
+  background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/EQMOWcXPx/abstract-yellow-background-with-a-flying-circles_h_arm02o__F0000.png");
+*/
+  background-color: white;
 }
 
 @keyframes App-logo-spin {
@@ -22,47 +27,105 @@ body {
 .city {
   font-family: sans-serif-penna;
   position: absolute;
-  top: 83%;
+  top: 40%;
   left: 40%;
-  font-size: 50px;
+  font-size: 75px;
   opacity: 0.7;
   color: blue;
   font-weight: bold;
   letter-spacing: 13px;
   text-shadow: 3px 5px 2px gray;
+
+  animation: fadein 3s linear;
 }
 .desc {
   position: absolute;
-  top: 99%;
-  left: 15%;
-  width: 70%;
-  font-size: 40px;
-  text-align: center;
+  top: 55%;
+  left: 25%;
+  width: 55%;
+  color: #333333;
+  font-family: janda, cursive;
+  font-size: 30px;
+  text-align: justify;
+  text-justify: inter-word;
   padding: 60px;
   animation: fadein 3s linear;
 }
 .events {
   position: absolute;
   margin: auto;
-  top: 67%;
+  top: 36%;
 }
 .event {
   font-size: 15px;
   padding: 25px;
   margin: 40px;
   width: 60%;
-  background-color: black;
   color: white;
+  border-radius: 10px;
+  transition: transform 1s;
 }
+
+.event {
+  background: #8e24aa;
+  box-shadow: 2px 4px 15px #427388;
+}
+.event:nth-child(1) .event:nth-child(1):before,
+.event:nth-child(1):after,
+.event:nth-child(1) span:before,
+.event:nth-child(1) span:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(79, 25, 77, 0.25);
+  transition: 0.4s ease-in-out;
+}
+.event:nth-child(1):after,
+.event:nth-child(1) span:before {
+  top: auto;
+  bottom: 0;
+}
+.event:nth-child(1) span:before,
+.event:nth-child(1) span:after {
+  transition-delay: 0.4s;
+}
+.event:nth-child(1):hover {
+  color: #e0cae0;
+}
+.event:nth-child(1):hover:before,
+.event:nth-child(1):hover:after,
+.event:nth-child(1):hover span:before,
+.event:nth-child(1):hover span:after {
+  height: 80px;
+}
+.event:nth-child(1):active {
+  background-color: #842981;
+}
+/* .event:hover {
+  background: red;
+  opacity: 0.6;
+  color: white;
+  letter-spacing: 10px;
+  border: 1px solid #8e24aa;
+}
+/*
 .event:hover {
-  color: blue;
   transform: scale(1.2);
   opacity: 0.9;
+  color: aqua;
 }
-a {
-  text-decoration: none;
-  color: white;
+
+.event:hover {
+  background-color: blue;
+
+  transform: rotateX(180deg);
+  border-radius: 10px;
 }
+*/
+
 .remove {
   padding: 15px;
   margin: 30px;
@@ -74,19 +137,29 @@ a {
   margin: 0 auto;
   left: 0%;
   width: 100%;
-  height: 60%;
+  height: 30%;
 }
 
 img {
   width: 100%;
   height: 100%;
+
+  -webkit-filter: blur(10%); /* Safari 6.0 - 9.0 */
+  filter: blur(10%);
+
+  -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
+  filter: blur(3px);
+}
+img:hover {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
 }
 .extra {
   position: absolute;
   left: 0px;
   top: 0%;
   width: 15%;
-  height: 157%;
+  height: 100%;
   background-color: gray;
   opacity: 0.1;
 }
