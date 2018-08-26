@@ -1,46 +1,93 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./city.css";
-import ved from "./city.json";
-class App extends Component {
+import ved from "../data/city.json";
+import Kolkata from "../Landing/img/Kolkata.jpg";
+import Bangalore from "../Landing/img/Bangalore.jpg";
+import Bhopal from "../Landing/img/Bhopal.jpg";
+import Mumbai from "../Landing/img/Mumbai.jpg";
+import Delhi from "../Landing/img/Delhi.jpg";
+import Ranchi from "../Landing/img/Ranchi.jpg";
+import Vizag from "../Landing/img/Vizag.jpg";
+import Pune from "../Landing/img/Pune.png";
+import Bhubaneshwar from "../Landing/img/Bhubhaneshwar.jpg";
+import Hyderabad from "../Landing/img/Hyderabad.jpg";
+
+class City extends Component {
+  constructor(props) {
+    super(props);
+    this.show = this.show.bind(this);
+  }
+
+  show(value) {
+    this.props.show(value);
+  }
+
   render() {
     var i = 10;
-    var city = "New Delhi";
-    {
-      if (city == "New Delhi") i = "0";
-      if (city == "Kolkata") i = 1;
-      if (city == "Bhubaneshwar") i = 2;
-      if (city == "Ranchi") i = 3;
-      if (city == "Bangalore") i = 4;
-      if (city == "Bhopal") i = 5;
-      if (city == "Vizag") i = 6;
-      if (city == "Hyderabad") i = 7;
-      if (city == "Mumbai") i = 8;
-      if (city == "Pune") i = 9;
+    var city = this.props.cityName;
+    var image_name;
+    if (city === "New Delhi") {
+      i = 0;
+      image_name = Delhi;
     }
-
+    if (city === "Kolkata") {
+      i = 1;
+      image_name = Kolkata;
+    }
+    if (city === "Bhubaneshwar") {
+      i = 2;
+      image_name = Bhubaneshwar;
+    }
+    if (city === "Ranchi") {
+      i = 3;
+      image_name = Ranchi;
+    }
+    if (city === "Bangalore") {
+      i = 4;
+      image_name = Bangalore;
+    }
+    if (city === "Bhopal") {
+      i = 5;
+      image_name = Bhopal;
+    }
+    if (city === "Vizag") {
+      i = 6;
+      image_name = Vizag;
+    }
+    if (city === "Hyderabad") {
+      i = 7;
+      image_name = Hyderabad;
+    }
+    if (city === "Mumbai") {
+      i = 8;
+      image_name = Mumbai;
+    }
+    if (city === "Pune") {
+      i = 9;
+      image_name = Pune;
+    }
     return (
-      <div className="App">
-        <div className="extra" />
-        <div className="image">
-          <img src={ved[ved["city"][i]].image} />
+      <div className="CityPage">
+        <div className="city-extra" />
+        <div className="city-image">
+          <img src={image_name} alt="" />
         </div>
-        <div className="events">
+        <div className="city-events">
           {ved[ved["city"][i]].event.map(ta => (
-            <a key={ta} className="ved">
+            <a className="ved" onClick={() => this.show(ta)}>
+              {" "}
               {ta}
             </a>
           ))}
         </div>
         <div className="main">
-          <div className="city">{ved["city"][i]}</div>
-
+          <div className="city-city">{ved["city"][i]}</div>
           <br />
-          <div className="desc">{ved[ved["city"][i]].desc}</div>
+          <div className="city-desc">{ved[ved["city"][i]].desc}</div>
         </div>
       </div>
     );
   }
 }
 
-export default App;
+export default City;

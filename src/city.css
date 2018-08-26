@@ -1,31 +1,16 @@
-.App {
+.CityPage {
   text-align: center;
   margin: 0;
 }
+
 body {
   margin: 0;
   padding: 0;
-
-  /*
-
-  background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/EQMOWcXPx/abstract-yellow-background-with-a-flying-circles_h_arm02o__F0000.png");
-*/
   background-image: url("cityb.jpg");
   background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.main {
-}
-.city {
+.city-city {
   font-family: sans-serif-penna;
   position: absolute;
   top: 40%;
@@ -39,7 +24,7 @@ body {
 
   animation: fadein 3s linear;
 }
-.desc {
+.city-desc {
   position: absolute;
   top: 55%;
   left: 25%;
@@ -52,62 +37,19 @@ body {
   padding: 60px;
   animation: fadein 3s linear;
 }
-.events {
+.city-events {
   position: absolute;
   margin: auto;
   top: 36%;
   left: 3%;
 }
-.event {
-  font-size: 15px;
-  padding: 25px;
-  margin: 40px;
-  width: 60%;
-  color: white;
-  border-radius: 10px;
-  transition: transform 1s;
-}
 
-.event {
-  background: #8e24aa;
-  box-shadow: 2px 4px 15px #427388;
-}
-
-.event {
-  color: #363d8a;
-}
-
-/* .event:hover {
-  background: red;
-  opacity: 0.6;
-  color: white;
-  letter-spacing: 10px;
-  border: 1px solid #8e24aa;
-}
-/*
-.event:hover {
-  transform: scale(1.2);
-  opacity: 0.9;
-  color: aqua;
-}
-
-.event:hover {
-  background-color: blue;
-
-  transform: rotateX(180deg);
-  border-radius: 10px;
-}
-*/
-#v {
-  width: 100%;
-  height: 100%;
-}
-.remove {
+.city-remove {
   padding: 15px;
   margin: 30px;
 }
 
-.image {
+.city-image {
   position: absolute;
   top: 0%;
   margin: 0 auto;
@@ -116,21 +58,19 @@ body {
   height: 30%;
 }
 
-img {
+.city-image img {
   width: 100%;
   height: 100%;
-
-  -webkit-filter: blur(10%); /* Safari 6.0 - 9.0 */
-  filter: blur(10%);
 
   -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
   filter: blur(3px);
 }
-img:hover {
+
+.city-image img:hover {
   -webkit-filter: blur(0px);
   filter: blur(0px);
 }
-.extra {
+.city-extra {
   position: absolute;
   left: 0px;
   top: 0%;
@@ -139,14 +79,14 @@ img:hover {
   background-color: gray;
   opacity: 0.1;
 }
-
+/*
 .gr_lacalhost {
   margin: 0;
   padding: 0;
   width: 0%;
   height: 0%;
 }
-
+*/
 @keyframes fadein {
   from {
     opacity: 0;
@@ -156,36 +96,33 @@ img:hover {
   }
 }
 @media only screen and (max-width: 600px) {
-  .city {
+  .city-city {
     position: absolute;
     left: 5%;
     top: 70%;
     font-size: 30px;
   }
-  .events {
+  .city-events {
     position: absolute;
     top: 160%;
     left: 24%;
   }
-  .event {
+  .city-event {
     padding: 10px;
     width: 60%;
   }
-  .desc {
+  .city-desc {
     position: absolute;
     top: 80%;
     left: 0%;
     font-size: 15px;
     width: 100%;
   }
-  .extra {
+  .city-extra {
     height: 157%;
   }
-  .image {
+  .city-image {
     height: 50%;
-  }
-  body {
-    background-size: cover;
   }
 }
 
